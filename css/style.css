@@ -121,6 +121,10 @@ terang 5F6187
   animation: rotate1 7s infinite;
 }
 
+.text-swt {
+  font-family: swt;
+}
+
 @keyframes rotate1 {
   0% {
     transform: rotate(0deg) scale(1);
@@ -165,6 +169,10 @@ terang 5F6187
 
 .img-header {
   width: 70%;
+  animation: reveal 2s;
+}
+.img-protocol {
+  width: 100%;
   animation: reveal 2s;
 }
 
