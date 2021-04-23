@@ -1,0 +1,197 @@
+@font-face {
+  font-family: romantic;
+  src: url(../assets/fonts/Romantic.ttf);
+}
+
+@font-face {
+  font-family: swt;
+  src: url(../assets/fonts/Swt.otf);
+}
+
+body {
+  font-family: swt;
+  background-color: #fff6f6;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff6f6;
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid;
+  color: #fff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: loader 1.2s linear infinite;
+}
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* 
+hijau : 
+gelap : 8d7432;
+terang : b69d5b;
+
+
+UNGU :
+gelap 3F4055
+terang 5F6187
+*/
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff6f6;
+  position: fixed;
+  z-index: 1000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: romantic;
+}
+
+.text-welcome {
+  color: #b69d5b;
+  font-size: 10vh;
+  margin-top: 50px;
+}
+
+.btn-open {
+  background-color: #aa3c5d;
+  color: #f4eeed;
+  border: none;
+  border-radius: 100px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 3s;
+  transition: 1s;
+  font-family: swt;
+}
+.btn-open:hover {
+  background-color: #8d7432;
+  color: #f4eeed;
+  transition: 1s;
+}
+.muncul {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 3s;
+}
+
+.frame {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+  background-image: url(../assets/img/bg.png);
+}
+
+.frame1 {
+  width: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  animation: rotate1 7s infinite;
+}
+
+.frame2 {
+  width: 50%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  animation: rotate1 7s infinite;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(15deg) scale(1.2);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.title-bride {
+  font-family: romantic;
+  font-weight: bold;
+  color: #aa3c5d;
+  animation: reveal 2s;
+}
+
+.title {
+  color: #f39291;
+  animation: reveal 2s;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.title-date {
+  color: #c96c6b;
+  animation: reveal 2s;
+}
+
+.img-header {
+  width: 70%;
+  animation: reveal 2s;
+}
+
+.color3 {
+  color: #c96c6b;
+}
+
+.color2 {
+  color: #aa3c5d;
+}
+@media (max-width: 992px) {
+}
+
+@media (min-width: 992px) {
+  .frame1 {
+    width: 30%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    animation: rotate1 7s infinite;
+  }
+
+  .frame2 {
+    width: 30%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    animation: rotate1 7s infinite;
+  }
+}
